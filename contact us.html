@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<style>
+  /* Styles for Contact Us page */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url(joy.jpg) no-repeat center;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: #333;
+    display: block;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    height: 200px;
+  }
+  
+  input[type="submit"] {
+    background-color: #964b00;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #964b00;
+  }
+  
+  footer {
+    background-color: #964b00;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Contact Form</h1>
+</header>
+
+<nav>
+  <a href="#">Contact Us</a>
+</nav>
+
+<main>
+  <form>
+    <label for="name"><b>Name:</b></label>
+          <input type="text" id="name" name="name" required><br><br>
+          
+          <label for="email"><strong>Email:</strong></label>
+          <input type="email" id="email" name="email" required><br><br>
+          
+          <label for="message"><strong>Contact Message:</strong></label><br>
+          <textarea id="message" name="message" required></textarea><br><br>
+          
+          <input type="submit" value="Send">
+  </form>
+</main>
+
+<footer><!--  End footer  -->
+  <p>&copy; 2023 CSS Challenge by Gary Oduor</p>
+</footer>
+</body>
+
